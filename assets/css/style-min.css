@@ -14,6 +14,11 @@ html {
   --rem: 10 !important;
 }
 
+/* ::marker {
+  margin: 0;
+  padding: 0;
+} */
+
 @font-face {
   font-family: "KFWCentroSans";
   src: url("fonts/KFWCentroSans-Bold.eot");
@@ -140,6 +145,14 @@ ul {
   margin-right: 0.7rem;
 }
 
+.space-x-small-lt {
+  margin-left: 0.7rem;
+}
+
+.space-small-lt {
+  margin-left: 2.2rem;
+}
+
 .space-x-small-bt {
   margin-bottom: 0.7rem;
 }
@@ -178,7 +191,11 @@ ul {
   max-height: 16rem;
 }
 
-.img-100{
+.align-items-start {
+  align-items: flex-start;
+}
+
+.img-100 {
   max-width: 100%;
   max-height: 80%;
 }
@@ -190,7 +207,7 @@ ul {
   height: 16rem;
 }
 
-.box-top{
+.box-top {
   align-items: start;
 }
 
@@ -200,11 +217,11 @@ ul {
 }
 
 .mr-2 {
-  margin: 0 2rem 0 0;
+  margin-right: 2rem;
 }
 
 .listing {
-  list-style: inside;
+  padding-left: 15px;
 }
 
 .list-none {
@@ -214,17 +231,20 @@ ul {
 .list-none li {
   display: flex;
   justify-items: center;
-  padding: 0 0 0 1.5rem;
+  align-items: center;
+  padding: 0;
 }
 
-.list-none li img {
+.list-none li img,
+.list-none li span {
   height: auto;
   align-self: center;
   margin: 0 1rem 0 0;
 }
 
 /** checkbox **/
-[type="checkbox"], [type="radio"] {
+[type="checkbox"],
+[type="radio"] {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -276,35 +296,35 @@ ul {
 .checkbox input[type="checkbox"]:checked + label::before {
   background-image: url(../images/checked.jpg);
 }
-.checkbox a{
+.checkbox a {
   color: #13556f;
   font-family: "KFWCentroSansMedium";
 }
-.link-1{
+.link-1 {
   color: #13556f;
   text-decoration: none;
 }
-.qr-bg{
+.qr-bg {
   background-color: #f6f5ed;
   padding: 2rem;
 }
-.text-center{
+.text-center {
   text-align: center;
 }
-.qr-img{
+.qr-img {
   background-color: #fff;
   padding: 1rem;
   width: 20rem;
   height: 20rem;
   margin: auto;
 }
-.qr-img img{
+.qr-img img {
   max-width: 100%;
 }
-.text-right{
+.text-right {
   text-align: right;
 }
-.btn-2{
+.btn-2 {
   border-radius: 5px;
   padding: 1.5rem 2.5rem;
   background: none;
@@ -314,22 +334,37 @@ ul {
   text-decoration: none;
   display: flex;
   align-items: center;
+  cursor: pointer;
+  -webkit-align-items: center;
+  -webkit-align-content: center;
 }
-.btn-2.dark{
+.btn-2.dark {
   background-color: #005a8c;
   color: #fff;
 }
-.border-0{
+.border-0 {
   border: none;
 }
-.btn-2 img{
+.btn-2 img {
   margin: 0 1rem 0 0;
   align-self: center;
 }
-.flex-btn{
+/** Chrominum */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .btn-2 span {
+    align-self: center;
+    padding: 3px 0 0;
+  }
+}
+@-moz-document url-prefix() {
+  .btn-2 span {
+    padding: 1px 0 0;
+  }
+}
+.flex-btn {
   display: flex;
   justify-content: end;
 }
-.space-lt-rt{
+.space-lt-rt {
   padding: 0 1rem;
 }
