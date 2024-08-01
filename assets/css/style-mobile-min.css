@@ -74,7 +74,7 @@ ul {
   width: 894px;
   max-width: 100%;
   margin: auto;
-  padding: 4rem;
+  padding: 3.6rem;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
@@ -162,8 +162,8 @@ ul {
 }
 
 .space-left-14 {
-  margin-left: 1.4rem;
-}
+    margin-left: 1.4rem;
+  }
 
 .space-left-2 {
   margin-left: 2rem;
@@ -371,4 +371,11 @@ ul {
 }
 .space-lt-rt {
   padding: 0 1rem;
+}
+
+@media (max-width: 768px) {
+  .flex-btn {
+    display: flex;
+    justify-content: start;
+  }
 }
