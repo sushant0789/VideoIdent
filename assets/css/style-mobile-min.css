@@ -482,7 +482,8 @@ ul {
   box-sizing: border-box;
 }
 .popup .popup__content p {
-  line-height: 18px;
+  line-height: 1.4;
+  font-size: 1.6rem;
   padding: 0 0 15px;
 }
 .popup .popup__content .close span:nth-child(1) {
@@ -559,9 +560,6 @@ ul {
     width: 90%;
     padding: 15px;
     margin-left: -45%;
-  }
-  .popup .popup__content p {
-    line-height: 2.6rem;
   }
   .flex-btn {
     justify-content: start;
@@ -676,5 +674,8 @@ ul {
   }
   .pt-3 {
     padding-top: 3rem;
+  }
+  .flex-left a {
+    align-self: flex-start;
   }
 }
