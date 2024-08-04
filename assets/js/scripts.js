@@ -3,12 +3,8 @@ $(document).on("click", ".next", function () {
   $(this).parents(".main-box").next(".main-box").show();
 });
 
-$("#agree").change(function () {
-  if (this.checked) {
-    $(".popup").fadeIn(400);
-  } else {
-    $(".popup").hide();
-  }
+$(".click-pop").click(function () {
+  $(".popup").fadeIn(400);
 });
 
 $(".close").click(function () {

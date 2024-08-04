@@ -286,7 +286,6 @@ ul {
   background-position: 0 0;
   vertical-align: middle;
   cursor: pointer;
-  color: #005a8c;
 }
 .checkbox label::before {
   position: absolute;
@@ -301,8 +300,9 @@ ul {
 .checkbox input[type="checkbox"]:checked + label::before {
   background-image: url(../images/checked.jpg);
 }
-.checkbox a {
-  color: #13556f;
+.click-pop {
+  color: #005a8c;
+  cursor: pointer;
   font-family: "KFWCentroSansMedium";
 }
 

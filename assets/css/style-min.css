@@ -301,8 +301,9 @@ ul {
 .checkbox input[type="checkbox"]:checked + label::before {
   background-image: url(../images/checked.jpg);
 }
-.checkbox a {
-  color: #13556f;
+.click-pop {
+  color: #005a8c;
+  cursor: pointer;
   font-family: "KFWCentroSansMedium";
 }
 .link-1 {
