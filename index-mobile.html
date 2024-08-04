@@ -188,7 +188,7 @@
         </div>
       </div>
 
-      <div class="main-box">
+      <div class="main-box d-none">
         <h1 class="title-h1 space-large">
           Was ist zur Video Identifizierung erforderlich?
         </h1>
@@ -287,111 +287,187 @@
       </div>
 
       <div class="main-box d-none">
-        <h1 class="title-h1">Wie funktioniert die Video Identifizierung?</h1>
-        <h4 class="tx-4">
-          Lassen Sie Ihre Identitat von einem unserer qualifizierten
-          Video-Agenten verifizieren.
-        </h4>
-        <div class="d-flex space-large">
-          <div class="w-16 box">
-            <img
-              src="assets/images/id_card_icon.png"
-              alt="id_card_icon"
-              class="space-small"
-            />
-          </div>
-          <div>
-            <h2 class="title-h2 space-x-small-bt">
-              <span class="space-x-small">1</span>ID-Dokument validieren
-            </h2>
-            <p class="tx-1 space-left">
-              Zuerst machen Sie ein Foto lhres Personalausweises oder
-              Peisepassex Dazu legen Sie daz Dokument waagerecht auf eine ebene
-              Flfiche. Das Dokument muss auf dem Foto komplett zu sehen sein
-              lauf Pfinder achten, kein Finger on Bildk Bitte Lichtreflexe
-              vermeiden.
+        <p class="tx-1 space-x-small-bt">ID-Dokument validieren</p>
+        <h1 class="title-h1 space-x-small-bt">Starte Verifizierung</h1>
+        <p class="tx-1-medium">Dokumentetyp</p>
+        <ul class="list-none">
+          <li>
+            <p class="tx-1 radiobox">
+              <input
+                type="radio"
+                name="thing"
+                value="valuable"
+                id="documenttype"
+              /><label for="documenttype">Personalausweis</label>
             </p>
-          </div>
-        </div>
-        <div class="d-flex space-large">
-          <div class="w-16 box">
-            <img
-              src="assets/images/verifeye_selfie_a.png"
-              alt="verifeye_selfie_a"
-              class="space-small"
-            />
-          </div>
-          <div>
-            <h2 class="title-h2 space-x-small-bt">
-              <span class="space-x-small">2</span>Selfie Abgleich
-            </h2>
-            <p class="tx-1 space-left">
-              Dann machen Sie ein Selfie. Das System vergleicht das Bild des
-              Ausweisdokuments and Ihr Selfie mit Hilfe biometrischer Plerkmale.
-              Bitte gerade in die Karna gucken and evtl. Brille oder
-              Kopfbedeckung absetzen, falls diese sof dem Ausweisfoto nicht zu
-              sehen sind.
+          </li>
+          <li>
+            <p class="tx-1 radiobox space-large">
+              <input
+                type="radio"
+                name="thing"
+                value="valuable"
+                id="pass"
+              /><label for="pass">Reisepass</label>
             </p>
-          </div>
-        </div>
-
-        <div class="d-flex space-large">
-          <div class="w-16 box">
-            <img
-              src="assets/images/Video-Ident.png"
-              alt="Video-Ident"
-              class="space-small"
-            />
-          </div>
-          <div>
-            <h2 class="title-h2 space-x-small-bt">
-              <span class="space-x-small">3</span>Video-Call
-            </h2>
-            <p class="tx-1 space-left">
-              Als letzten Schritt ffihren Sie einen Verifizierungs-Call mit
-              einem unserer Video-Agenten. Der Agent fiberprrift die Angaben zu
-              lhrer Identitat Die Videoidentifizierung wird von 1110, and
-              Verifeye im Auftrag der KAN durchgefrihrt.
-            </p>
-          </div>
-        </div>
-
-        <div class="d-flex space-large">
-          <div class="w-16 box-top">
-            <img
-              src="assets/images/video.jpg"
-              alt="video"
-              class="space-small"
-            />
-          </div>
-          <div>
-            <h2 class="title-h2 space-x-small-bt">Erklarvideo</h2>
-            <p class="tx-1">
-              lm Video zeigen wir lhnen, wie Sie die Verifizierung auf lhrem
-              Smartphone durchfiThren:
-            </p>
-            <a href="" class="link-1 tx-1"
-              ><img
-                src="assets/images/arrow.jpg"
-                class="space-x-small"
-                alt="arrow"
-              />
-              Video Starten (02:55 min)</a
-            >
-          </div>
-        </div>
-
+          </li>
+        </ul>
+        <p class="tx-1-medium space-x-small-bt">Ausstellendes Land</p>
+        <select class="select-box space-large" name="" selected="" tabindex="1">
+          <option value="select" selected="">Deutschland</option>
+          <option value="">1</option>
+          <option value="">2</option>
+        </select>
         <hr class="space-medium" />
 
         <div class="flex-btn">
-          <a class="btn-2 border-0"
+          <a class="btn-2 border-0 space-small-rt"
             ><img src="assets/images/close.jpg" alt="close" /><span
               >Abbrechen</span
             ></a
           >
           <a class="btn-2 dark next"
             ><img src="assets/images/arrow-white.jpg" alt="arrow-white" /><span
-              >Video Identifizierung starten</span
+              >Weiter</span
+            ></a
+          >
+        </div>
+        <div class="powered-by tx-1">
+          Powered by <span class="space-lt-rt">-</span>
+          <img
+            src="assets/images/verifeye-logo.png"
+            alt="verifeye-logo"
+            width="143"
+          />
+        </div>
+      </div>
+
+      <div class="main-box d-none">
+        <p class="tx-1 space-x-small-bt">ID-Dokument validieren</p>
+        <h1 class="title-h1 space-x-small-bt">
+          Scannen Sie die Vorderseite Ihres Ausweises
+        </h1>
+        <p class="tx-4 space-small">
+          Achten Sie darauf, fass das Bild nicht unscharf oder verpixelt ist.
+          Die Informationen auf dem Dokument sollten deutlich sichtbar sein.
+        </p>
+        <div class="flex-full space-large">
+          <img
+            src="assets/images/passport.jpg"
+            alt="passport"
+            class="img-100 rounded"
+          />
+        </div>
+
+        <hr class="space-medium" />
+
+        <div class="flex-btn">
+          <a class="btn-2 border-0 space-small-rt"
+            ><img src="assets/images/close.jpg" alt="close" /><span
+              >Abbrechen</span
+            ></a
+          >
+          <a class="btn-2 dark next"
+            ><img src="assets/images/arrow-white.jpg" alt="arrow-white" /><span
+              >Foto machen</span
+            ></a
+          >
+        </div>
+        <div class="powered-by tx-1">
+          Powered by <span class="space-lt-rt">-</span>
+          <img
+            src="assets/images/verifeye-logo.png"
+            alt="verifeye-logo"
+            width="143"
+          />
+        </div>
+      </div>
+
+      <div class="main-box d-none">
+        <p class="tx-1 space-x-small-bt">ID-Dokument validieren</p>
+        <h1 class="title-h1 space-x-small-bt">
+          Scannen Sie die Ruckseite Ihres Ausweises
+        </h1>
+        <p class="tx-4 space-small">
+          Achten Sie darauf, fass das Bild nicht unscharf oder verpixelt ist.
+          Die Informationen auf dem Dokument sollten deutlich sichtbar sein.
+        </p>
+        <div class="flex-full space-large">
+          <img
+            src="assets/images/passport.jpg"
+            alt="passport"
+            class="img-100 rounded"
+          />
+        </div>
+
+        <hr class="space-medium" />
+
+        <div class="flex-btn">
+          <a class="btn-2 border-0 space-small-rt"
+            ><img src="assets/images/close.jpg" alt="close" /><span
+              >Abbrechen</span
+            ></a
+          >
+          <a class="btn-2 dark next"
+            ><img src="assets/images/arrow-white.jpg" alt="arrow-white" /><span
+              >Foto machen</span
+            ></a
+          >
+        </div>
+        <div class="powered-by tx-1">
+          Powered by <span class="space-lt-rt">-</span>
+          <img
+            src="assets/images/verifeye-logo.png"
+            alt="verifeye-logo"
+            width="143"
+          />
+        </div>
+      </div>
+
+      <div class="main-box">
+        <p class="tx-1 space-x-small-bt">ID-Dokument validieren</p>
+        <h1 class="title-h1 space-x-small-bt">Starte Verifizierung</h1>
+        <p class="tx-1-medium space-x-small-bt">Dokumentetyp</p>
+        <ul class="list-none">
+          <li>
+            <p class="tx-1 radiobox">
+              <input
+                type="radio"
+                name="thing"
+                value="valuable"
+                id="documenttype"
+              /><label for="documenttype">Personalausweis</label>
+            </p>
+          </li>
+          <li>
+            <p class="tx-1 radiobox space-large">
+              <input
+                type="radio"
+                name="thing"
+                value="valuable"
+                id="pass"
+                checked
+              /><label for="pass">Reisepass</label>
+            </p>
+          </li>
+        </ul>
+        <p class="tx-1-medium space-x-small-bt">Ausstellendes Land</p>
+        <select class="select-box space-large" name="" selected="" tabindex="1">
+          <option value="select" selected="">Deutschland</option>
+          <option value="">1</option>
+          <option value="">2</option>
+        </select>
+        <hr class="space-medium" />
+
+        <div class="flex-btn">
+          <a class="btn-2 border-0 space-small-rt"
+            ><img src="assets/images/close.jpg" alt="close" /><span
+              >Abbrechen</span
+            ></a
+          >
+          <a class="btn-2 dark next"
+            ><img src="assets/images/arrow-white.jpg" alt="arrow-white" /><span
+              >Weiter</span
             ></a
           >
         </div>
